@@ -1,2 +1,2 @@
 # ui-portfolio
-this is my porrtfolio 
+this is my portfolio 
