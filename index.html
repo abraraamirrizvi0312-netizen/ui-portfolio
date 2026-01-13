@@ -2,17 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta content="author" content="Muhammad Abrar">
+    <meta name="author" content="Nexus">
+    <link rel="icon" href="https://i.ibb.co/GfsL7rjb/logo1.avif">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <style>
-        .heading{
-            background-color: magenta;
-            color: blue;
-        }
-    </style>
+    <title>Doctor Appointment System</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="heading">My Portfolio</h1>
+
+<header>
+    <div><span id="logo"><img style="border-radius: 50%;" src="https://i.ibb.co/GfsL7rjb/logo1.avif" height="50" width="50">MediCare</span></div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Doctors</a>
+        <a href="#">Contact</a>
+        <a id="consultBtn">Free Consultation</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Find your Doctor & make<br>an Appointment</h1>
+    <p>Book appointments with trusted doctors and get quick medical support anytime.</p>
+    <button id="bookBtn">Book An Appointment</button>
+</section>
+
+<section class="doctors" id="doctorsSection">
+    <div>
+        <img src="https://i.ibb.co/0yPBJmXb/doctor2.png">
+        <h3>Dr. Rahul</h3>
+        <p>Cardiologist</p>
+    </div>
+
+    <div>
+        <img src="https://i.ibb.co/W4B3DwZF/doctor.png">
+        <h3>Dr. Aryan</h3>
+        <p>Neurologist</p>
+    </div>
+
+    <div>
+        <img src="https://i.ibb.co/jkjw5Fbm/doc3.jpg">
+        <h3>Dr. Sam</h3>
+        <p>Orthopedic</p>
+    </div>
+
+    <div>
+        <img src="https://i.ibb.co/G3GNNSHs/doc4.jpg">
+        <h3>Dr. Abhilash</h3>
+        <p>Psychiatrist</p>
+    </div>
+</section>
+
+<div id="appointmentModal">
+    <div class="modal-box">
+        <span id="closeBtn">✖</span>
+        <h2>Book Appointment</h2>
+
+        <input id="name" placeholder="Patient Name">
+        <input id="phone" placeholder="Phone Number">
+
+        <select id="doctor">
+            <option value="">Select Doctor</option>
+            <option>Dr. Sam</option>
+            <option>Dr. Aryan</option>
+            <option>Dr. Rahul</option>
+            <option>Dr. Abhilash</option>
+        </select>
+
+        <input type="date" id="date">
+        <input type="time" id="time">
+
+        <button id="confirmBtn">Confirm Appointment</button>
+    </div>
+</div>
+
+<script src="fetch.js"></script>
 </body>
 </html>
